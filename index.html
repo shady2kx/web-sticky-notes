@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sticky Notes</title>
+    <link rel="icon" href="sticky-notes.png">
+    <link rel="stylesheet" href="css/style.css" id="light">
+    <!-- <link rel="stylesheet" href="css/darkmode.css" id="dark"> -->
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/fontawesome5.7.2/css/all.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col s12 m10 l2">
+            <form id="form-notes">
+                <h5><i class="fa fa-sticky-note"></i> Sticky Notes</h5>
+                <div class="row">
+                    <div class="input-field col s12">
+                        Your Notes:
+                        <textarea id="notes" placeholder="Type your notes here..."
+                            class="materialize-textarea"></textarea>
+                    </div>
+                    <div class="input-field col s12">
+                        Note Title:
+                        <input placeholder="Type the title of your notes.." id="title" type="text" class="">
+                    </div>
+                    <div class="input-field col s12">
+                        Your Name:
+                        <input placeholder="Type your name here.." id="author" type="text" class="">
+                    </div>
+                    <div class="input-field col s12">
+                        <select class="browser-default" id="color">
+                            <option value="" disabled selected>Choose the color of your note</option>
+                            <option value="blue lighten-2">Blue</option>
+                            <option value="red lighten-2">Red</option>
+                            <option value="green lighten-2">Green</option>
+                            <option value="yellow lighten-2">Yellow</option>
+                            <option value="grey">Grey</option>
+                            <option value="purple lighten-2">Purple</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="ADD NOTES" id="add-notes" class="btn-large blue darken-2">
+                <br><a class="btn-flat btn-small mt-2 clear-notes"><i class="fas fa-trash-restore-alt"></i> Clear All
+                    Notes</a>
+            </form>
+            <!-- Switch -->
+            <!-- <div class="switch mt-5">
+                <label>
+                    Light
+                    <input type="checkbox" id="switcher">
+                    <span class="lever"></span>
+                    Dark
+                </label>
+            </div> -->
+        </div>
+        <div class="row col l10 s12 notes-form mt-5">
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+    <footer class="container grey-text text-lighten-1">
+        © 2019 Emel Capilitan
+        <a class="grey-text text-lighten-1 right" href="#!">Powered by Materialize CSS</a>
+    </footer>
+</body>
+
+</html>
